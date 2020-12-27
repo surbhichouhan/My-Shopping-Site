@@ -1,0 +1,24 @@
+{% extends 'shop/base.html' %}
+{% block title%}    PRODUCT US ...... {% endblock %}
+{% block css %} {% endblock %}
+
+{% block body%}
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-4">
+            
+                <img src="/media/{{product.image}}" alt="image of {{product.product_name}}" width="250px" height="300px">
+                <button class="btn btn-primary cart my-3">Add To Cart</button>
+                <button class="btn btn-primary cart mx-3 my-3">Buy Now</button>
+            
+        </div> 
+        <div class="col-md-8">
+            <h3><b>{{product.product_name}}</b></h3>
+            <b>{{product.price}}</b>
+            <div>
+                {{product.desc }}
+            </div>
+        </div>              
+    </div>
+</div>
+{% endblock %}
